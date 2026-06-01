@@ -1,0 +1,10 @@
+# Core dependencies will be added as examples are implemented.
+# Suggested future packages:
+# langchain
+# crewai
+# llama-index
+# boto3
+# python-dotenv
+# faiss-cpu
+# chromadb
+# streamlit
