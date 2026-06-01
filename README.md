@@ -1,187 +1,113 @@
 # MM AI Agents Training
 
-This repository is intended to document and organize hands-on learning, experiments, and practice projects related to **AI agents**, **agentic AI**, and modern AI application development.
+This repository is a structured learning and experimentation workspace for **AI agents**, **agentic AI**, **tool-using agents**, **RAG agents**, **multi-agent systems**, and **enterprise AI use cases**.
 
-The current repository is an early-stage training workspace. It can be used to capture examples, notes, exercises, prototypes, and code related to building AI agents that can reason, use tools, retrieve information, and coordinate multi-step tasks.
+The goal is to organize hands-on learning in a way that supports both technical growth and professional portfolio development.
 
-## Project Purpose
+## Purpose
 
-The purpose of this repository is to create a structured learning space for AI agent development.
+This repository is intended to help build practical capability in AI agent development by progressing from foundational concepts to increasingly enterprise-relevant implementations.
 
-The repository can support exploration of topics such as:
+The focus areas include:
 
 - AI agent fundamentals
-- Agentic workflows
-- Tool use by language models
+- Prompt engineering for agents
+- Tool use and function calling
 - Retrieval-Augmented Generation (RAG)
 - Multi-agent collaboration
-- Prompt engineering for agents
-- Function calling and tool orchestration
-- Memory and context management
-- Evaluation of agent behavior
+- Framework comparisons
+- Amazon Bedrock agents and knowledge bases
+- Agent evaluation and governance
 - Enterprise AI use cases
 
-## Learning Objectives
-
-This repository can be used to build practical understanding of how AI agents work and how they can be applied to real-world business and technology scenarios.
-
-Key learning objectives include:
-
-1. Understand what makes an AI system agentic
-2. Learn how agents use tools to perform actions
-3. Explore how agents break down tasks into steps
-4. Practice designing prompts and instructions for agents
-5. Understand how memory and context affect agent performance
-6. Experiment with RAG-based agent workflows
-7. Compare single-agent and multi-agent patterns
-8. Study enterprise use cases for AI automation
-9. Build small prototypes that demonstrate agent behavior
-10. Connect AI agent design to practical business value
-
-## What Is an AI Agent?
-
-An AI agent is a software system that can use a language model, instructions, context, tools, and goals to perform tasks on behalf of a user or process.
-
-A simple AI agent may:
-
-- Receive a user request
-- Interpret the goal
-- Decide what steps are needed
-- Use tools or APIs
-- Retrieve relevant information
-- Produce an answer or take an action
-
-More advanced agents may include:
-
-- Planning
-- Memory
-- Tool selection
-- Multi-step reasoning
-- Human-in-the-loop review
-- Multi-agent coordination
-- Observability and evaluation
-
-## Suggested Repository Structure
-
-As this training repository grows, the following structure may be useful:
+## Repository Map
 
 ```text
 .
 ├── README.md
-├── notes/
-│   └── ai_agents_fundamentals.md
-├── examples/
-│   ├── simple_agent/
-│   ├── tool_using_agent/
-│   ├── rag_agent/
-│   └── multi_agent_workflow/
-├── prompts/
-│   ├── system_prompts.md
-│   └── evaluation_prompts.md
-├── diagrams/
-│   └── agent_architecture.md
-├── experiments/
-│   └── README.md
-└── requirements.txt
+├── ROADMAP.md
+├── LEARNING_LOG.md
+├── GLOSSARY.md
+├── requirements.txt
+├── .gitignore
+│
+├── 00_foundations/
+├── 01_simple_agents/
+├── 02_tool_using_agents/
+├── 03_rag_agents/
+├── 04_frameworks/
+├── 05_aws_bedrock_agents/
+├── 06_multi_agent_systems/
+├── 07_enterprise_use_cases/
+├── 08_evaluation_and_governance/
+├── 09_diagrams/
+├── 10_prompts/
+└── 99_archive/
 ```
 
-## Topics to Explore
+## Learning Path
 
-### 1. AI Agent Fundamentals
-
-Core concepts to study:
-
-- Agent
-- Tool
-- Goal
-- Task
-- Context
-- Memory
-- Planning
-- Action
-- Observation
-- Evaluation
-
-### 2. Tool Use
-
-Agents become more useful when they can interact with external systems.
-
-Potential tools include:
-
-- Search tools
-- APIs
-- Databases
-- File systems
-- Calculators
-- Code execution tools
-- Enterprise systems
-- Cloud services
-
-### 3. Retrieval-Augmented Generation
-
-RAG allows an AI system to retrieve relevant information before generating an answer.
-
-A RAG-enabled agent may:
-
-1. Receive a question
-2. Search a knowledge base
-3. Retrieve relevant documents
-4. Use the retrieved content as context
-5. Generate a grounded response
-
-### 4. Multi-Agent Systems
-
-Multi-agent systems use multiple specialized agents that collaborate on a shared goal.
-
-Example roles may include:
-
-- Planner Agent
-- Research Agent
-- Coding Agent
-- Review Agent
-- Testing Agent
-- Domain Expert Agent
-
-### 5. Enterprise AI Use Cases
-
-Potential enterprise use cases include:
-
-- Warranty claim review
-- Quality issue triage
-- Technical support assistance
-- Software development support
-- Incident management
-- Knowledge management
-- Requirements analysis
-- Project status summarization
-- Risk assessment
-- Workflow automation
-
-## Example Agent Architecture
-
-A simple agent architecture may look like this:
+The repository is organized as a progressive learning path:
 
 ```text
-User Request
+Foundations
     ↓
-Agent Instructions / System Prompt
+Simple Agents
     ↓
-Language Model
+Tool-Using Agents
     ↓
-Planning / Reasoning Step
+RAG Agents
     ↓
-Tool Selection
+Agent Frameworks
     ↓
-External Tool or Knowledge Source
+AWS Bedrock Agents
     ↓
-Observation / Retrieved Context
+Multi-Agent Systems
     ↓
-Final Response or Action
+Enterprise Use Cases
+    ↓
+Evaluation and Governance
 ```
 
-## Potential Technology Stack
+## Directory Purpose
 
-This repository may eventually include experiments using tools and frameworks such as:
+| Directory | Purpose |
+|----------|---------|
+| `00_foundations/` | Conceptual notes on AI agents, workflows, memory, planning, and prompt design. |
+| `01_simple_agents/` | Small beginner-friendly agent examples. |
+| `02_tool_using_agents/` | Agents that interact with tools, APIs, files, databases, or external systems. |
+| `03_rag_agents/` | Retrieval-Augmented Generation examples and document Q&A workflows. |
+| `04_frameworks/` | Experiments and comparisons involving frameworks such as LangChain, CrewAI, and LlamaIndex. |
+| `05_aws_bedrock_agents/` | Amazon Bedrock examples, knowledge bases, action groups, and AWS integrations. |
+| `06_multi_agent_systems/` | Multi-agent orchestration patterns and collaboration examples. |
+| `07_enterprise_use_cases/` | Business-oriented AI agent use cases such as warranty review, quality triage, and support automation. |
+| `08_evaluation_and_governance/` | Notes and experiments related to quality, safety, security, cost, observability, and human-in-the-loop controls. |
+| `09_diagrams/` | Architecture diagrams and visual explanations. |
+| `10_prompts/` | Reusable prompt templates for agents, tools, RAG, multi-agent systems, and evaluation. |
+| `99_archive/` | Deprecated experiments, old drafts, or historical learning artifacts. |
+
+## Current Status
+
+This repository is in the early setup stage.
+
+The current work focuses on establishing a clean structure that can support future examples, experiments, notes, prompts, diagrams, and enterprise use cases.
+
+## Suggested First Experiments
+
+Initial experiments to add:
+
+1. Simple Q&A agent
+2. Calculator tool agent
+3. File-reading agent
+4. Local document Q&A / RAG agent
+5. Planner-reviewer multi-agent workflow
+6. Amazon Bedrock basic model invocation
+7. Amazon Bedrock Knowledge Base example
+8. Warranty claim review agent prototype
+
+## Technology Stack Candidates
+
+Potential technologies and frameworks to explore:
 
 - Python
 - LangChain
@@ -200,16 +126,14 @@ This repository may eventually include experiments using tools and frameworks su
 
 ## Getting Started
 
-At this stage, the repository is a workspace for organizing AI agent training content.
-
-As code examples are added, setup instructions can be expanded to include:
+Clone the repository:
 
 ```bash
 git clone https://github.com/mickemora/mm__ai_agents_training.git
 cd mm__ai_agents_training
 ```
 
-Future Python-based examples may use:
+For future Python-based examples, create and activate a virtual environment:
 
 ```bash
 python3 -m venv .venv
@@ -217,64 +141,30 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Suggested First Exercises
-
-Potential first exercises for this repository include:
-
-1. Build a simple question-answering agent
-2. Build an agent that uses a calculator tool
-3. Build an agent that retrieves information from a small local knowledge base
-4. Build a RAG workflow using a few sample documents
-5. Build a multi-agent workflow with planner and reviewer roles
-6. Create a prompt library for different agent behaviors
-7. Document lessons learned from each experiment
-
-## Skills Demonstrated
-
-As this repository develops, it can demonstrate skills such as:
-
-- AI agent design
-- Prompt engineering
-- Python development
-- Tool orchestration
-- RAG architecture
-- Workflow automation
-- Multi-agent design
-- Cloud AI integration
-- AI solution evaluation
-- Enterprise AI thinking
-
 ## Professional Relevance
 
-AI agents are becoming increasingly important in enterprise technology because they can help automate knowledge work, coordinate multi-step processes, and interact with internal systems.
+AI agents are increasingly relevant to enterprise technology because they can help automate knowledge work, coordinate multi-step processes, retrieve internal knowledge, and interact with business systems.
 
-For enterprise IT and technology leadership, AI agents are relevant to:
+Relevant enterprise use cases include:
 
-- Operational efficiency
-- Software delivery acceleration
+- Warranty claim review
+- Quality issue triage
+- Dealer or technical support assistance
+- Incident management
 - Knowledge management
-- Customer and dealer support
-- Quality management
-- Warranty analysis
-- Incident response
-- Business process automation
+- Requirements analysis
+- Project status summarization
+- Risk assessment
+- Workflow automation
 - Decision support systems
 
-## Current Status
+## Key Supporting Documents
 
-This repository is currently in an early setup stage.
-
-Planned next steps may include:
-
-- Add foundational notes on AI agents
-- Add basic Python examples
-- Add sample prompts
-- Add a simple tool-using agent
-- Add a RAG-based example
-- Add architecture diagrams
-- Add links to relevant training resources
-- Add lessons learned from hands-on experiments
+- `ROADMAP.md` - planned learning and implementation phases
+- `LEARNING_LOG.md` - ongoing record of lessons learned
+- `GLOSSARY.md` - AI agent terminology and definitions
+- `requirements.txt` - Python dependencies for future examples
 
 ## Summary
 
-This repository is intended to become a hands-on AI agents training workspace. It will organize learning materials, experiments, examples, and prototypes related to agentic AI, tool use, RAG, multi-agent systems, and enterprise AI applications.
+This repository is intended to become a hands-on AI agents training lab. It will organize learning materials, experiments, prototypes, prompts, diagrams, and enterprise AI use cases related to agentic AI, RAG, tool use, multi-agent systems, and cloud-based AI development.
